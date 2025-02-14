@@ -97,7 +97,7 @@ Tabel 1. Deskripsi Variabel
 Dilihat dari _Tabel 1. Deskripsi Variabel_ dataset ini telah di *bersihkan* dan *normalisasi* terlebih dahulu oleh pembuat, sehingga mudah digunakan dan ramah bagi pemula. 
 - Dataset berupa CSV (Comma-Seperated Values).
 - Dataset memiliki 5110 sample dengan 12 fitur.
-- Dataset memiliki 4 fitur bertipe int64,3 fitur bertipe float64 dan 5 fitur bertipe object.
+- Dataset memiliki 4 fitur bertipe int64, 3 fitur bertipe float64 dan 5 fitur bertipe object.
 - Terdapat 201 missing value dalam dataset.
 ### Variable - variable pada dataset
 - `id` : Penomoran unik untuk tiap data.
