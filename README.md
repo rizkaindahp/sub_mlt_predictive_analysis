@@ -145,6 +145,7 @@ Berdasarkan _Gambar 2a_, yang menjadi data numeric pada gambar diatas yaitu gend
 ![Analisis Univariat (Data Distribution Stroke by Gender)](./images/distribution_stroke_by_gender.png)
 
 Gambar 3a. Analisis Univariat (Data Distibution Stroke by Gender)
+
 Berdasarkan _Gambar 3a_, pasien Female memiliki penyakit stroke lebih banyak dibandingkan laki-laki. Berikut penjelasan nya:
 - Dari data diatas, distirbusi pasien perempuan (Female) yang mengalami stroke lebih banyak dibandingkan dengan laki-laki (Male). Begitu juga untuk pasien perempuan (Female) yg tidak mengalami stroke (No Stroke) sedikit lebih tinggi dibandingkan laki-laki (Male).
 - Ada 1 data pasien yang tidak menyebutkan gender nya.
@@ -152,6 +153,7 @@ Berdasarkan _Gambar 3a_, pasien Female memiliki penyakit stroke lebih banyak dib
 ![Analisis Univariat (Data Distribution Stroke by Gender)](./images/ration_stroke_by_smoking_status.png)
 
 Gambar 4a. Analisis Univariat (Data Ratio Smoking Status)
+
 Berikut penjelasan dari gambar _Gambar 4a_:
 *  Sebagian besar pasien stroke tidak pernah merokok (never smoked) dengan rasio 40,2%
 *  Beberapa pasien stroke pernah merokok secara intens (formerly smoked) dengan rasio 27,3%
@@ -162,9 +164,30 @@ Berikut penjelasan dari gambar _Gambar 4a_:
 
 ![Multivariate Analysis (Tot Stroke by Gender and Age Group)](./images/stroke_by_gender_age.png)
 
+Gambar 1b. Analisis Multivariate (Data Total Stroke Patients by Gender and Age Group)
+
+Kesimpulan dari _Gambar 1b_:
+- Risiko stroke meningkat secara signifikan setelah usia 40 tahun, dengan puncaknya di kelompok usia 61-80 tahun.
+- Perempuan memiliki jumlah kasus stroke lebih tinggi dibanding laki-laki di hampir semua kelompok usia.
+- Jumlah kasus stroke sangat sedikit pada usia muda (0-20 tahun dan 21-40 tahun).
+- Setelah usia 80 tahun, jumlah pasien stroke mulai menurun, kemungkinan karena faktor kesehatan dan harapan hidup.
+
 ![Multivariate Analysis (Tot No Stroke by Gender and Age Group)](./images/no_stroke_by_gender_age.png)
 
+Gambar 2b. Analisis Multivariate (Data No Stroke Total Patients by Gender and Age Group)
+
+Kesimpulan dari _Gambar 2b_:
+- Mayoritas pasien tanpa stroke berada dalam kelompok usia 41-60 tahun, dengan jumlah perempuan lebih banyak dibandingkan laki-laki.
+- Semakin tua usia, semakin sedikit jumlah pasien yang tidak mengalami stroke. Ini bisa mengindikasikan bahwa risiko stroke meningkat pada usia lanjut.
+- Perempuan cenderung memiliki jumlah pasien lebih tinggi dibandingkan laki-laki di setiap kelompok usia.
+- Jumlah pasien dengan gender "Other" sangat sedikit, sehingga mungkin tidak cukup signifikan untuk analisis lebih lanjut.
+👉 *Implikasi*: Jika jumlah pasien yang tidak mengalami stroke lebih banyak di usia 41-60, mungkin perlu fokus lebih besar pada pencegahan stroke di kelompok usia ini untuk mengurangi risiko di masa depan.
+
 ![Multivariate Analysis (Heatmap Correlation between Features)](./images/heatmap_correlation_fitur.png)
+
+Gambar 3b. Analisis Multivariate (Analisis Matriks Korelasi Fitur)
+
+Pada Gambar 3b. Analisis Multivariate, dengan menggunakan fungsi pairplot dari library seaborn, tampak terlihat relasi pasangan dalam dataset menunjukan pola acak. Pada pola ini faktor yang paling berpengaruh terhadap stroke dalam dataset ini adalah age (0.23). Hipertensi (hypertension), penyakit jantung (heart_disease), dan kadar gula darah (avg_glucose_level) memiliki hubungan yang lemah terhadap stroke (sekitar 0.14). BMI hampir tidak berkorelasi dengan stroke. Tidak ada hubungan yang sangat kuat di antara fitur-fitur ini, menunjukkan bahwa stroke mungkin dipengaruhi oleh kombinasi berbagai faktor dan bukan hanya satu faktor tunggal. .
 
 
 ## Data Preparation
