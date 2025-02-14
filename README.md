@@ -448,7 +448,7 @@ Dari tabel di atas dapat memberikan informasi bahwa ke enam model yang dibangun 
 
 ## Evaluation
 
-Pada proyek ini, model yang dibuat merupakan kasus _multiclass classification_ dan metrik evaluasi yang digunakan untuk mengukur kinerja model yaitu menggunakan metrik **akurasi, precision dan recall**. Pada klasifikasi dengan jumlah keluaran kelas yang lebih dari dua (multi-class), cara menghitung akurasi, presisi dan recall dapat dilakukan dengan menghitung rata-rata dari nilai akurasi, presisi dan recall pada setiap kelas. Berikut merupakan formula untuk menghitung nilai akurasi, presisi dan recall dari sistem klasifikasi multi-class (bersumber dari [[here](https://achmatim.net/2017/03/19/mengukur-kinerja-algoritma-klasifikasi-dengan-confusion-matrix/)]) :
+Pada proyek ini, model yang dibuat merupakan kasus _multiclass classification_ dan metrik evaluasi yang digunakan untuk mengukur kinerja model yaitu menggunakan metrik **akurasi, precision, recall dan F1-Score**. Pada klasifikasi dengan jumlah keluaran kelas yang lebih dari dua (multi-class), cara menghitung akurasi, presisi, recall dan F1-Score dapat dilakukan dengan menghitung rata-rata dari nilai akurasi, presisi, recall dan F1-Score pada setiap kelas. Berikut merupakan formula untuk menghitung nilai akurasi, presisi, recall dan F1-Score dari sistem klasifikasi multi-class (bersumber dari [[here](https://achmatim.net/2017/03/19/mengukur-kinerja-algoritma-klasifikasi-dengan-confusion-matrix/)]) :
 
 - Akurasi
   <br> Akurasi merupakan perbandingan antara data yang terklasifikasi benar dengan keseluruhan data. Nilai akurasi dapat diperoleh dengan persamaan berikut :
@@ -461,11 +461,16 @@ Pada proyek ini, model yang dibuat merupakan kasus _multiclass classification_ d
   <img width="266" alt="presisi" src="https://user-images.githubusercontent.com/71582007/139705453-e4e55344-1869-4ad8-88ab-8e0125b45847.PNG">
 
 - Recall
-  <br> Sementara itu, recall menunjukkan berapa persen data kategori positif yang terklasifikasikan dengan benar oleh sistem. Recall dapat diperoleh dengan persamaan berikut :
+  <br> Recall menunjukkan berapa persen data kategori positif yang terklasifikasikan dengan benar oleh sistem. Recall dapat diperoleh dengan persamaan berikut :
   
   <img width="267" alt="recall" src="https://user-images.githubusercontent.com/71582007/139705495-a20297ee-a787-4ca8-910f-3863246413ab.PNG">
 
-Pada proyek ini, menghitung nilai akurasi, precsion dan recall dilakukan dengan menggunakan modul [accuracy_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html), [precision_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html), [recall_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html) dari library Scikitlearn dan menambahkan parameter average = 'weighted'.
+- F1-Score
+  <br> Sementara itu, F1-Score merupakan ukuran keseimbangan antara presisi dan recall. F1-Score dihitung dengan menggunakan rata-rata harmonik dari presisi dan recall, yang dapat diperoleh dengan persamaan berikut:
+  
+  <img width="267" alt="recall" src="/images/f1-score.png">
+
+Pada proyek ini, menghitung nilai akurasi, precsion, recall dan F1-Score dilakukan dengan menggunakan modul [accuracy_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html), [precision_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html), [recall_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html) dari library Scikitlearn dan menambahkan parameter average = 'weighted'.
 
 
 ## _Referensi_
