@@ -468,7 +468,7 @@ Pada proyek ini, model yang dibuat merupakan kasus _multiclass classification_ d
 - F1-Score
   <br> Sementara itu, F1-Score merupakan ukuran keseimbangan antara presisi dan recall. F1-Score dihitung dengan menggunakan rata-rata harmonik dari presisi dan recall, yang dapat diperoleh dengan persamaan berikut:
   
-  <img width="267" alt="f1-score" src="./images/f1-score.png">
+  <img width="267" alt="f1-score" src="/images/f1-score.png">
 
 Pada proyek ini, menghitung nilai akurasi, precsion, recall dan F1-Score dilakukan dengan menggunakan modul [accuracy_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html), [precision_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html), [recall_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html) dari library Scikitlearn dan menambahkan parameter average = 'weighted'.
 
