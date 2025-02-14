@@ -194,13 +194,14 @@ Pada Gambar 3b. Analisis Multivariate, dengan menggunakan fungsi pairplot dari l
 
 Pada proses _Data Preparation_ dilakukan kegiatan seperti _Data Gathering_, _Data Assessing_, dan _Data Cleaning_. Pada proses Data Gathering, data diimport sedemikian rupa agar bisa dibaca dengan baik menggunakan dataframe Pandas. Untuk proses Data Assessing, berikut adalah beberapa pengecekan yang dilakukan:
 - Duplicate data (data yang serupa dengan data lainnya).
-- Missing value (data atau informasi yang "hilang" atau tidak tersedia)
+- Missing value (data atau informasi yang "hilang" atau tidak tersedia).
 - Outlier (data yang menyimpang dari rata-rata sekumpulan data yang ada).
 
 Pada proses _Data Cleaning_ yang dilakukan adalah seperti:
 - Converting Column Type (Mengubah tipe suatu kolom).
-- Menghapus column atau fitur yang NaN.
-- Normalization (mentransformasi data ke dalam skala yang seragam sehingga semua fitur atau atribut memiliki rentang nilai yang sebanding).
+- Menghapus kolom/fitur `id` karena tidak berpengaruh terhadap data yang akan di prediksi.
+- Menghapus baris pada fitur `bmi` yang memiliki data missing value (N/A, NaN, Null).
+
 
 | id | gender | age| hypertension| heart_disease| ever_married| work_type| Residence_type| avg_glucose_level | bmi | smoking_status | stroke |
 | ---| ------ |--- | ----------- | ------------ | ----------- |--------- | ------------- |------------------ | --- | -------------- |------- |
@@ -243,7 +244,7 @@ Pada proyek ini, model yang dibuat merupakan kasus multiclass classification yai
 ### _K-Nearest Neighbors (KNN)_
 KNN adalah algoritma machine learning yang sederhana dan mudah dipahami untuk klasifikasi dan regresi. Algoritma ini bekerja dengan menemukan k tetangga terdekat dari data baru dan kemudian menggunakan kategori atau nilai rata-rata dari tetangga tersebut untuk memprediksi kategori atau nilai data baru. Adapun parameter yang digunakan pada proyek ini adalah:
   -  `n_neighbors` jumlah tetangga terdekat.
-  -  `weight = distance` Tetangga yang lebih dekat memiliki pengaruh lebih besar.
+  -  `weight = uniform` Tetangga yang lebih dekat memiliki pengaruh lebih besar.
   
   Keunggulan _KNN_ :
   - Dapat digunakan untuk klasifikasi dan regresi.
@@ -304,7 +305,6 @@ Penjelasan dari Matrix Desicion Tree diatas:
   Model salah memprediksi negatif (tidak stroke) padahal sebenarnya positif.
 - True Positive (TP) = 7
   Model memprediksi positif (stroke) dengan benar.
-
 
 
 ### _Random Forest_ 
@@ -437,13 +437,7 @@ Penjelasan dari Matrix XGBoost diatas:
 - True Positive (TP) = 3
   Model memprediksi positif (stroke) dengan benar.
 
-### Hasil Pengujian Semua Model 
 
-Dari hasil pengujian ke enam model yang telah dibuat, berikut merupakan perbandingan performa antar Model :
-
-![Performa All Model (performa model)](./images/evaluasi_all_model.png)
-
-Dari tabel di atas dapat memberikan informasi bahwa ke enam model yang dibangun memiliki nilai akurasi di atas 85%. Dimana dapat dilihat juga bahwa model dengan tingkat performa teratas yaitu Random Forest, Support Vector Machine, dan KNN. Ketiganya sama-sama menghasilkan performa terbaik yang sebagai acuan adalah nilai accuracy, precision, dan recall, dari enam algoritma yang dijadikan model. Disusul oleh algoritma XGBoost dan Desicion Tree yang memiliki nilai performa yang sangat baik. Terakhir, algoritma Naive Bayes (Gaussion NB) memperoleh nilai performa yang kurang baik.
 
 
 ## Evaluation
@@ -468,9 +462,16 @@ Pada proyek ini, model yang dibuat merupakan kasus _multiclass classification_ d
 - F1-Score
   <br> Sementara itu, F1-Score merupakan ukuran keseimbangan antara presisi dan recall. F1-Score dihitung dengan menggunakan rata-rata harmonik dari presisi dan recall, yang dapat diperoleh dengan persamaan berikut:
   
-  <img width="267" alt="f1-score" src="https://github.com/rizkaindahp/sub_mlt_predictive_analysis/blob/main/images/f1-score.png">
+  <img width="267" alt="f1-score" src="https://github.com/user-attachments/assets/ed86906d-6aac-4895-9182-b42362fdf1c3">
 
-Pada proyek ini, menghitung nilai akurasi, precsion, recall dan F1-Score dilakukan dengan menggunakan modul [accuracy_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html), [precision_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html), [recall_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html) dari library Scikitlearn dan menambahkan parameter average = 'weighted'.
+Pada proyek ini, menghitung nilai akurasi, precsion, recall dan F1-Score dilakukan dengan menggunakan modul [accuracy_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html), [precision_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html), [recall_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html), 
+[f1_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html) dari library Scikitlearn dan menambahkan parameter average = 'weighted'.
+
+Dari hasil pengujian ke enam model yang telah dibuat, berikut merupakan perbandingan performa antar Model :
+
+![Performa All Model (performa model)](./images/evaluasi_all_model.png)
+
+Dari tabel di atas dapat memberikan informasi bahwa ke enam model yang dibangun memiliki nilai akurasi di atas 85%. Dimana dapat dilihat juga bahwa model dengan tingkat performa teratas yaitu Random Forest, Support Vector Machine, dan KNN. Ketiganya sama-sama menghasilkan performa terbaik yang sebagai acuan adalah nilai accuracy, precision, dan recall, dari enam algoritma yang dijadikan model. Disusul oleh algoritma XGBoost dan Desicion Tree yang memiliki nilai performa yang sangat baik. Terakhir, algoritma Naive Bayes (Gaussion NB) memperoleh nilai performa yang kurang baik.
 
 
 ## _Referensi_
