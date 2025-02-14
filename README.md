@@ -475,11 +475,11 @@ Dari tabel di atas dapat memberikan informasi bahwa ke enam model yang dibangun 
 
 Kesimpulan:
 
-Random Forest (RF) dan Support Vector Machine (SVM) memiliki akurasi tertinggi (94.60%).
-Disusul oleh K-Nearest Neighbors (KNN) dengan 94.50% dan XGBoost (94.09%).
-Naïve Bayes (NB) memiliki akurasi terendah (89.21%) di antara semua model.
+- Random Forest (RF) dan Support Vector Machine (SVM) memiliki akurasi tertinggi (94.60%).
+- Disusul oleh K-Nearest Neighbors (KNN) dengan 94.50% dan XGBoost (94.09%).
+- Naïve Bayes (NB) memiliki akurasi terendah (89.21%) di antara semua model.
 
-Rekomendasi: RF dan SVM adalah pilihan terbaik jika hanya mempertimbangkan akurasi.
+Rekomendasi: Random Forest dan Support Vector Machine (SVM) adalah pilihan model terbaik yang bisa digunakan untuk memprediksi penyakit stroke dengan mempertimbangkan akurasi yang lebih tinggi dibandingkan model lainnya.
 
 
 ## _Referensi_
