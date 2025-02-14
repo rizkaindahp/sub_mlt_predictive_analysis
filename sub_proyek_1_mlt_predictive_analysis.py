@@ -486,7 +486,10 @@ df_prep.head()
 
 df_prep.columns
 
-"""- Menampilkan columns yang ada pada var df_prep"""
+"""- Menampilkan columns yang ada pada var df_prep
+
+### Melakukan Pembagian Dataset
+"""
 
 # Misalkan kita punya dataset df_prep dengan fitur X dan target y
 X = df_prep.drop(columns=['stroke','Residence_type','work_type','ever_married','gender'])  # Fitur
