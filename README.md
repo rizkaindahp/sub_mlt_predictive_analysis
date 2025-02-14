@@ -393,7 +393,7 @@ Kemudian proses selanjutnya melakukan prediksi menggunakan data uji dan melakuka
 ![Confusion Matrix (Confusion Matrix Naive Bayes)](./images/confusion_mtrx_nb.png)
 
 Penjelasan dari Matrix Naive Bayes diatas:
-- True Negative (TN) = 823
+- True Negative (TN) = 853
   Model memprediksi negatif (tidak stroke) dengan benar.
 - False Positive (FP) = 76
   Model salah memprediksi positif (stroke) padahal sebenarnya negatif.
@@ -437,6 +437,15 @@ Penjelasan dari Matrix XGBoost diatas:
 - True Positive (TP) = 3
   Model memprediksi positif (stroke) dengan benar.
 
+### Hasil Pengujian Semua Model 
+
+Dari hasil pengujian ke enam model yang telah dibuat, berikut merupakan perbandingan performa antar Model :
+
+![Performa All Model (performa model)](./images/evaluasi_all_model.png)
+
+Dari tabel di atas dapat memberikan informasi bahwa ke enam model yang dibangun memiliki nilai akurasi di atas 85%. Dimana dapat dilihat juga bahwa model dengan tingkat performa teratas yaitu Random Forest, Support Vector Machine, dan KNN. Ketiganya sama-sama menghasilkan performa terbaik yang sebagai acuan adalah nilai accuracy, precision, dan recall, dari enam algoritma yang dijadikan model. Disusul oleh algoritma XGBoost dan Desicion Tree yang memiliki nilai performa yang sangat baik. Terakhir, algoritma Naive Bayes (Gaussion NB) memperoleh nilai performa yang kurang baik.
+
+
 ## Evaluation
 
 Pada proyek ini, model yang dibuat merupakan kasus _multiclass classification_ dan metrik evaluasi yang digunakan untuk mengukur kinerja model yaitu menggunakan metrik **akurasi, precision dan recall**. Pada klasifikasi dengan jumlah keluaran kelas yang lebih dari dua (multi-class), cara menghitung akurasi, presisi dan recall dapat dilakukan dengan menghitung rata-rata dari nilai akurasi, presisi dan recall pada setiap kelas. Berikut merupakan formula untuk menghitung nilai akurasi, presisi dan recall dari sistem klasifikasi multi-class (bersumber dari [[here](https://achmatim.net/2017/03/19/mengukur-kinerja-algoritma-klasifikasi-dengan-confusion-matrix/)]) :
@@ -458,7 +467,6 @@ Pada proyek ini, model yang dibuat merupakan kasus _multiclass classification_ d
 
 Pada proyek ini, menghitung nilai akurasi, precsion dan recall dilakukan dengan menggunakan modul [accuracy_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html), [precision_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html), [recall_score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html) dari library Scikitlearn dan menambahkan parameter average = 'macro'.
 
-**---Ini adalah bagian akhir laporan---**
 
 ## _Referensi_
 - https://repository.unism.ac.id/66/4/12%20BAB%20I.pdf
