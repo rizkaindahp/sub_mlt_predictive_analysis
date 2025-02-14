@@ -5,11 +5,11 @@
 
 ### Latar Belakang
 
-Stroke merupakan masalah kesehatan global yang terjadi akibat terhentinya suplai darah ke otak, baik karena sumbatan (stroke iskemik) maupun pecahnya pembuluh darah (stroke hemoragik). Penyakit ini menjadi penyebab kematian tertinggi kedua di negara maju dan ketiga di negara berkembang, dengan sekitar 15 juta kasus baru setiap tahunnya (WHO).
+Stroke merupakan masalah kesehatan global yang terjadi akibat terhentinya suplai darah ke otak, baik karena sumbatan (stroke iskemik) maupun pecahnya pembuluh darah (stroke hemoragik). Penyakit ini menjadi penyebab kematian tertinggi kedua di negara maju dan ketiga di negara berkembang, dengan sekitar 15 juta kasus baru setiap tahunnya (WHO).[[1]](https://www.news-medical.net/news/20241004/Stroke-remains-a-leading-cause-of-death-globally-with-increased-risk-linked-to-lifestyle-factors.aspx)
 
-Stroke terjadi akibat gangguan aliran darah ke otak, yang dapat disebabkan oleh penyumbatan pembuluh darah (stroke iskemik) atau pecahnya pembuluh darah (stroke hemoragik). Faktor risiko utama stroke meliputi usia, tekanan darah tinggi (hipertensi), diabetes, penyakit jantung, obesitas, merokok, serta pola hidup yang tidak sehat. Deteksi dini sangat penting untuk mencegah komplikasi yang lebih serius, karena penanganan yang cepat dapat meningkatkan peluang pemulihan pasien.
+Stroke terjadi akibat gangguan aliran darah ke otak, yang dapat disebabkan oleh penyumbatan pembuluh darah (stroke iskemik) atau pecahnya pembuluh darah (stroke hemoragik). Faktor risiko utama stroke meliputi usia, tekanan darah tinggi (hipertensi), diabetes, penyakit jantung, obesitas, merokok, serta pola hidup yang tidak sehat. Deteksi dini sangat penting untuk mencegah komplikasi yang lebih serius, karena penanganan yang cepat dapat meningkatkan peluang pemulihan pasien.[[2]](https://health.detik.com/penyakit/stroke-d-6975174)
 
-Dengan berkembangnya teknologi di bidang kecerdasan buatan (Artificial Intelligence) dan machine learning, berbagai algoritma dapat digunakan untuk memprediksi risiko stroke berdasarkan faktor-faktor kesehatan individu. Beberapa model prediksi seperti K-Nearest Neighbors (KNN), Decision Tree (DT), Random Forest (RF), Support Vector Machine (SVM), Naïve Bayes (NB), dan XGBoost (XGB) telah menunjukkan tingkat akurasi yang tinggi dalam mengidentifikasi potensi stroke pada pasien.
+Dengan berkembangnya teknologi di bidang kecerdasan buatan (Artificial Intelligence) dan machine learning, berbagai algoritma dapat digunakan untuk memprediksi risiko stroke berdasarkan faktor-faktor kesehatan individu. Beberapa model prediksi seperti K-Nearest Neighbors (KNN), Decision Tree (DT), Random Forest (RF), Support Vector Machine (SVM), Naïve Bayes (NB), dan XGBoost (XGB) telah menunjukkan tingkat akurasi yang tinggi dalam mengidentifikasi potensi stroke pada pasien.[[3]](https://medium.com/%40gloryaanggie/implementasi-metode-random-forest-knn-k-nearest-neighbour-decision-tree-classification-3594ed898206)
 
 
 ## Business Understanding
@@ -469,5 +469,12 @@ Pada proyek ini, menghitung nilai akurasi, precsion dan recall dilakukan dengan 
 
 
 ## _Referensi_
+- [1] Vijay Kumar Malesu, (Oct 4 2024) https://www.news-medical.net/news/20241004/Stroke-remains-a-leading-cause-of-death-globally-with-increased-risk-linked-to-lifestyle-factors.aspx.
+- [2] https://health.detik.com/penyakit/stroke-d-6975174
+- [3] Glorya Debora Anggitha (Jul 1 2024) (https://medium.com/%40gloryaanggie/implementasi-metode-random-forest-knn-k-nearest-neighbour-decision-tree-classification-3594ed898206)
+- Wood, T. -.What is a Random Forest?. DeepAI. https://deepai.org/machine-learning-glossary-and-terms/random-forest
+- https://binus.ac.id/bandung/2019/12/algoritma-naive-bayes/
+- https://www.geeksforgeeks.org/support-vector-machine-algorithm/
+- https://www.kaggle.com/code/dmitryuarov/stroke-eda-prediction-with-6-models
+- https://www.kaggle.com/code/nimapourmoradi/healthcare-stroke
 - https://repository.unism.ac.id/66/4/12%20BAB%20I.pdf
-
