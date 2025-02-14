@@ -473,6 +473,14 @@ Dari hasil pengujian ke enam model yang telah dibuat, berikut merupakan perbandi
 
 Dari tabel di atas dapat memberikan informasi bahwa ke enam model yang dibangun memiliki nilai akurasi di atas 85%. Dimana dapat dilihat juga bahwa model dengan tingkat performa teratas yaitu Random Forest, Support Vector Machine, dan KNN. Ketiganya sama-sama menghasilkan performa terbaik yang sebagai acuan adalah nilai accuracy, precision, dan recall, dari enam algoritma yang dijadikan model. Disusul oleh algoritma XGBoost dan Desicion Tree yang memiliki nilai performa yang sangat baik. Terakhir, algoritma Naive Bayes (Gaussion NB) memperoleh nilai performa yang kurang baik.
 
+Kesimpulan:
+
+Random Forest (RF) dan Support Vector Machine (SVM) memiliki akurasi tertinggi (94.60%).
+Disusul oleh K-Nearest Neighbors (KNN) dengan 94.50% dan XGBoost (94.09%).
+Naïve Bayes (NB) memiliki akurasi terendah (89.21%) di antara semua model.
+
+Rekomendasi: RF dan SVM adalah pilihan terbaik jika hanya mempertimbangkan akurasi.
+
 
 ## _Referensi_
 - [1] Vijay Kumar Malesu, (Oct 4 2024) https://www.news-medical.net/news/20241004/Stroke-remains-a-leading-cause-of-death-globally-with-increased-risk-linked-to-lifestyle-factors.aspx.
