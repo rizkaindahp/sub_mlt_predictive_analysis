@@ -160,6 +160,13 @@ Berikut penjelasan dari gambar _Gambar 4a_:
 
 ### EDA - Multivariate Analysis
 
+![Multivariate Analysis (Tot Stroke by Gender and Age Group)](./images/stroke_by_gender_age.png)
+
+![Multivariate Analysis (Tot No Stroke by Gender and Age Group)](./images/no_stroke_by_gender_age.png)
+
+![Multivariate Analysis (Heatmap Correlation between Features)](./images/heatmap_correlation_fitur.png)
+
+
 ## Data Preparation
 
 Pada proses _Data Preparation_ dilakukan kegiatan seperti _Data Gathering_, _Data Assessing_, dan _Data Cleaning_. Pada proses Data Gathering, data diimport sedemikian rupa agar bisa dibaca dengan baik menggunakan dataframe Pandas. Untuk proses Data Assessing, berikut adalah beberapa pengecekan yang dilakukan:
