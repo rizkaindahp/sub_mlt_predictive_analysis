@@ -27,7 +27,7 @@ Berdasarkan latar belakang diatas, permasalahan yang dapat diselesaikan pada pro
 
 Saat ini, diagnosis stroke sering dilakukan setelah pasien mengalami gejala yang signifikan, yang mengurangi peluang intervensi dini. Beberapa permasalahan yang dihadapi dalam prediksi stroke adalah:
 
-- Bagaimana cara melakukan pra-pemrosesan data lahan sehingga dapat digunakan untuk membuat model yang baik?
+- Bagaimana cara melakukan pra-pemrosesan data stroke sehingga dapat digunakan untuk membuat model yang baik?
 - Bagaimana membangun model machine learning yang dapat memprediksi risiko stroke dengan akurasi tinggi berdasarkan data pasien?
 - Algoritma apa yang paling efektif dan optimal dalam mendeteksi risiko stroke?
 - Bagaimana model ini dapat membantu tenaga medis dalam memprediksi stroke terhadap pasien?
